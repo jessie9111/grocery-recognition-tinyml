@@ -1,7 +1,7 @@
 # grocery-recognition-tinyml
 Final Project for CS249r: Tiny Machine Learning
 
-**NOTE: There are still some bugs in our system that need to be fixed, however the sketch is very close to being able to be deployed. **
+### NOTE: There are still some bugs in our system that need to be fixed, however the sketch is very close to being able to be deployed.
 
 ### Testing out the ArduCam interfacing with Arduino nano 33 BLE
 
