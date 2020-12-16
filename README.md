@@ -77,7 +77,7 @@ In Windows 10:
 
 ### Deploying Other Models
 
-Our project also includes the TFLite files of different models we trained and addressed in our paper. You can deploy these models by converting the TFLite file to a c++ source file to deploy it on the Arduino Nano 33 BLE. You can use xxd.exe available in git-bash for Windows 10. For Ubuntu, you can install it with sudo apt-get install -y xxd. For Mac OSx, xxd was already installed by default. The command to generate the c++ source file from the TFLite file is shown below:
+Our project also includes the TFLite files of different models we trained using Edge Impulse and addressed in our paper. You can deploy these models by converting the TFLite file to a c++ source file to deploy it on the Arduino Nano 33 BLE. You can use xxd.exe available in git-bash for Windows 10. For Ubuntu, you can install it with sudo apt-get install -y xxd. For Mac OSx, xxd was already installed by default. The command to generate the c++ source file from the TFLite file is shown below:
 
 Windows 10 (on git-bash) `$ xxd.exe -i <path to tflite file> > <name of the c++ source file>`
 
@@ -87,4 +87,4 @@ This should convert the TFLite file of your trained model into a C++ source file
 
 For deploying your trained model, you need to make sure you install Arduino TensorFlowLite 2.1.0-ALPHA. You will use the Arduino project as the basic template on which you will load your model data. Navigate to the `person_detect_model_data.cpp` file to copy your c++ binary data to store it in the variable alignas(8) const unsigned char `g_person_detect_model_data[]`.
 
-Next navigate to the `edge-impulse-final.ino` file to change the kTensorArenaSize parameter. For determining the required size for your trained model, please use the utility designed by [Edge-Impulse](https://github.com/edgeimpulse/tflite-find-arena-size). Using the correct kTensorArenaSize is important since if it is too small or too large, it will fail to initialize TFLite. Once you made these two important changes, you can compile and project and flash the binary to load onto the Arduino Nano 33 BLE using Arduino IDE/Platform I/O.
+Next navigate to the `edge-impulse-final.ino` file to change the kTensorArenaSize parameter. For determining the required size for your trained model, please use the utility designed by [Edge Impulse](https://github.com/edgeimpulse/tflite-find-arena-size). Using the correct kTensorArenaSize is important since if it is too small or too large, it will fail to initialize TFLite. Once you made these two important changes, you can compile and project and flash the binary to load onto the Arduino Nano 33 BLE using Arduino IDE/Platform I/O.
