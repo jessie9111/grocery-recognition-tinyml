@@ -1,4 +1,4 @@
-# grocery-recognition-tinyml
+# Image Classification for Grocery Store Items: TinyML Applications in Retail
 Final Project for CS249r: Tiny Machine Learning
 
 ### NOTE: There are still some bugs in our system that need to be fixed, however the sketch is very close to being able to be deployed.
