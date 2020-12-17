@@ -1,6 +1,16 @@
 # Image Classification for Grocery Store Items: TinyML Applications in Retail
 Final Project for CS249r: Tiny Machine Learning
 
+### Folders in this Repository:
+
+`edge-impulse-final`: contains the Arduino sketch necessary to deploy the model on an Arduino Nano 33 BLE using the Arducam 5MP Plus. Instructions on how to deploy this sketch are found below.
+
+`dataset`: contains the 10 classes used in our research paper from the [Freiburg Grocery Dataset](https://github.com/PhilJd/freiburg_groceries_dataset).
+
+`tflite`: contains the TFLite files from the models we explored in our paper (MobileNetV2, NN). Use the instructions at the bottom of this README to apply these TFLite files to your model.
+
+`training`: contains screenshots of our work in Edge Impulse for each of the MobileNetV2 and NN models. Also contains Python notebooks with each model's neural network settings and code used to trained the models.
+
 ### NOTE: There are still some bugs in our system that need to be fixed, however the sketch is very close to being able to be deployed.
 
 ### Testing out the ArduCam interfacing with Arduino nano 33 BLE
