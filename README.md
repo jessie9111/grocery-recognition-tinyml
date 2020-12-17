@@ -12,6 +12,18 @@ Final Project for CS249r: Tiny Machine Learning
 `training`: contains screenshots of our work in Edge Impulse for each of the MobileNetV2 and NN models. Also contains Python notebooks with each model's neural network settings and code used to trained the models.
 
 ### NOTE: There are still some bugs in our system that need to be fixed, however the sketch is very close to being able to be deployed.
+The following error currently results from deploying our model:
+```
+Arduino: 1.8.13 (Mac OS X), Board: "Arduino Nano 33 BLE"
+
+Library Arduino_TensorFlowLite has been declared precompiled:
+Using precompiled library in /Users/jessicaedwards/Documents/Arduino/libraries/Arduino_TensorFlowLite/src/cortex-m4/fpv4-sp-d16-softfp
+/Users/jessicaedwards/Library/Arduino15/packages/arduino/hardware/mbed/1.3.0/variants/ARDUINO_NANO33BLE/linker_script.ld:138 cannot move location counter backwards (from 0000000020055f48 to 000000002003fc00)
+collect2: error: ld returned 1 exit status
+exit status 1
+Error compiling for board Arduino Nano 33 BLE.
+``` 
+Given more time, we would be able to fix the model and calculate scores based on the likelihood of a detected object being in a certain class.
 
 ### Testing out the ArduCam interfacing with Arduino nano 33 BLE
 
