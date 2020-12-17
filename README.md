@@ -5,6 +5,8 @@ Final Project for CS249r: Tiny Machine Learning
 
 ### Testing out the ArduCam interfacing with Arduino nano 33 BLE
 
+Our model is similar to the Person Detection 249R assignment in interfacing the Arduino nano 33 BLE with the TinyML board. The instructions for setting up the camera and models are very similar to the instructions given in that assignment. 
+
 **Camera Interfacing With Arduino**
 
 For interfacing the Arducam and the microcontroller, you will use the breadboard and use the connectors to interface them. Please refer the tinyML book chapter 9 for the pin connection from the ArduCam to the Arduino Nano 33 BLE or as shown below
